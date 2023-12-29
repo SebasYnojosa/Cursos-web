@@ -1,3 +1,5 @@
+@use '../base/variables' as var;
+
 h1 {
-    color: $rojo
+    color: var.$rojo;
 }

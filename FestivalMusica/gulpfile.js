@@ -13,7 +13,8 @@ function css(done) {
 }
 
 function dev(done) {
-    watch('src/scss/app.scss', css);    // Le asigna un watch a la funcion de compilar SASS
+    watch('src/scss/**/*', css);    // Le asigna un watch a la funcion de compilar SASS
+                                    // src/scss/**/*.scss indica que se busquen todos los archivos en todas las carpetas de manera recursiva con terminacion scss
 
     done();
 }

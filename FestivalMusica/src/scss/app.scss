@@ -1,7 +1,4 @@
 // Forma antigua para importar 
-@import 'base/variables';
-@import 'content/contenido';
-
-body {
-    background-color: $rojo;
-}
+@use 'base';  // @use Compila los archivos a los que apunte _index
+@use 'content';
+@use 'ui';
