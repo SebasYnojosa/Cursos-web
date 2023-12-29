@@ -1,10 +1,12 @@
 const { src, dest, watch } = require("gulp");
 const sass = require('gulp-sass')(require('sass')); // Le deja a Gulp que busque los binarios de SASS para usarlos
+const plumber = require('gulp-plumber');
  
 function css(done) {
 
 
-    src('src/scss/app.scss')            // Identifica archivo SASS
+    src('src/scss/**/*.scss')           // Identifica archivo SASS
+        .pipe(plumber())                // Evita que se detenga el workflow
         .pipe(sass())                   // Compila el archivo
         .pipe(dest('build/css'));       // Almacena en el disco duro el archivo compilado
 
