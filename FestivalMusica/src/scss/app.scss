@@ -1,4 +1,6 @@
-$rojo: red;
+// Forma antigua para importar 
+@import 'base/variables';
+@import 'content/contenido';
 
 body {
     background-color: $rojo;
