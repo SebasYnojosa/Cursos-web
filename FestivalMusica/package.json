@@ -1,0 +1,26 @@
+{
+  "name": "festivalmusica",
+  "version": "1.0.0",
+  "description": "Proyecto con Gulp, SASS y HTML",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebasYnojosa/Cursos-web.git"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp"
+  ],
+  "author": "Sebastian Ynojosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SebasYnojosa/Cursos-web/issues"
+  },
+  "homepage": "https://github.com/SebasYnojosa/Cursos-web#readme",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}
