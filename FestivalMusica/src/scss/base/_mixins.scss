@@ -1,0 +1,25 @@
+@use 'variables' as v;
+
+@mixin phone {
+    @media (min-width: v.$phone) { 
+        @content; // @content agarra el codigo encerrado entre llaves y lo pega aqui
+    } 
+}
+
+@mixin tablet {
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+} 
+
+@mixin desktop {
+    @media (min-width: v.$desktop) {
+        @content;
+    }
+}
+
+@mixin desktopxl {
+    @media (min-width: v.$desktopxl) {
+        @content;        
+    }
+}
